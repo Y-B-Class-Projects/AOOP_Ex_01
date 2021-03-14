@@ -1,5 +1,8 @@
 package com.company;
 
+import com.company.Location;
+import com.company.Train;
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -83,14 +86,14 @@ public class AirportUtilTest {
         return planes;
     }
 
-    public static void printTrains(Train[] trains){
+    public static void printTrains(Train [] trains){
         for (int i = 0; i < TOTAL; i++) {
             System.out.println("Details about Train number " + (i + 1));
             System.out.println(trains[i]);
         }
     }
 
-    public static void printPlanes(Plane[] planes){
+    public static void printPlanes(Plane [] planes){
         for (int i = 0; i < TOTAL; i++) {
             System.out.println("Details about Plane number " + (i + 1));
             System.out.println(planes[i]);
