@@ -1,5 +1,3 @@
-package com.company;
-
 public class Train implements Comparable, Movable{
     public static final int PASSENGER_LIMIT = 500;
     public static final int STATION_LIMIT = 5;

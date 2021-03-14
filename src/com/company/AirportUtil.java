@@ -1,5 +1,3 @@
-package com.company;
-
 import java.util.ArrayList;
 
 public class AirportUtil {
@@ -13,6 +11,4 @@ public class AirportUtil {
         }
         return String.join("\n",buffer);
     }
-
-
 }
