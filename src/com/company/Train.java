@@ -72,9 +72,9 @@ public class Train implements Comparable, Movable {
         if (o.getClass() == Train.class) {
             if (((Train) o).maximalPassenger == this.maximalPassenger)
                 return 0;
-            else if (((Train) o).maximalPassenger > this.maximalPassenger)
-                return 1;
             else if (((Train) o).maximalPassenger < this.maximalPassenger)
+                return 1;
+            else if (((Train) o).maximalPassenger > this.maximalPassenger)
                 return -1;
         }
 
