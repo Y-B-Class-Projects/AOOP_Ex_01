@@ -14,11 +14,11 @@ public class Plane implements Movable, Comparable{
     }
 
     @Override
-	public String toString() {
-		return String.format("licence = %d, source = %s, destination = %s, maxHeight = %d",
-				licenceNumber, source, destination, maximalHeight);
-	}
-	
+    public String toString() {
+        return String.format("licence = %d, source = %s, destination = %s, maxHeight = %d",
+                licenceNumber, source, destination, maximalHeight);
+    }
+
     @Override
     public String getType() {
         return "Plane";
@@ -61,6 +61,6 @@ public class Plane implements Movable, Comparable{
             else if (((Plane) o).maximalHeight > this.maximalHeight)
                 return  -1;
 
-            return -100;
+        return -100;
     }
 }

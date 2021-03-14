@@ -46,25 +46,23 @@ public class Train implements Comparable, Movable {
 
     @Override
     public String getCurrentLocation() {
-       if (currentStation == 0){
-           return source.name();
-       }
-       else {
-           return String.format("station: %d, between %s, and  %s",currentStation, source, destination);
-       }
+        if (currentStation == 0){
+            return source.name();
+        }
+        else {
+            return String.format("station %d between %s and %s.",currentStation, source, destination);
+        }
     }
 
     @Override
     public void move() {
-       if (currentStation != numberOfStations){
-           currentStation ++;
-       }
-       else {
-           currentStation = 0;
-           Location temp = source;
-           source = destination;
-           destination = temp;
-       }
+        currentStation ++;
+        if (currentStation == numberOfStations){
+            currentStation = 0;
+            Location temp = source;
+            source = destination;
+            destination = temp;
+        }
     }
 
     @Override

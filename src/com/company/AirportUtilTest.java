@@ -19,7 +19,6 @@ public class AirportUtilTest {
         Plane[] planes = initializePlanes(r);
         printPlanes(planes);
 
-
         System.out.println("---Sorting trains...---\n");
         AirportUtil.sortTransport(trains);
         // prints the reports of all the trains
