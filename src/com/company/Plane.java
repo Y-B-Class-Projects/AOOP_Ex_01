@@ -1,3 +1,5 @@
+package com.company;
+
 public class Plane implements Movable, Comparable{
     public static final int HEIGHT_LIMIT = 1500;
     int licenceNumber;

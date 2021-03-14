@@ -1,3 +1,5 @@
+package com.company;
+
 public interface Movable {
     String getType();
     int getId();

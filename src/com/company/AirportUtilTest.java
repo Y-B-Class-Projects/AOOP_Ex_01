@@ -1,3 +1,8 @@
+package com.company;
+
+import com.company.Location;
+import com.company.Train;
+
 import java.util.Random;
 import java.util.Scanner;
 
